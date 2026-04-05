@@ -1,0 +1,95 @@
+Microsoft Windows [Version 10.0.26200.8037]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\ftisl\Desktop\git_challenge>git init
+Initialized empty Git repository in C:/Users/ftisl/Desktop/git_challenge/.git/
+
+C:\Users\ftisl\Desktop\git_challenge>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello_world.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\ftisl\Desktop\git_challenge>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\ftisl\Desktop\git_challenge>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello_world.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\ftisl\Desktop\git_challenge>git add .
+
+C:\Users\ftisl\Desktop\git_challenge>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+
+C:\Users\ftisl\Desktop\git_challenge>git commit -m "hello_world.txtを追加"
+[main (root-commit) 399e749] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+C:\Users\ftisl\Desktop\git_challenge>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\ftisl\Desktop\git_challenge>git log
+commit 399e7498481edc37629331132c0d99d2d43f85ea (HEAD -> main)
+Author: kocchi4498 <ftisland2729@gmail.com>
+Date:   Wed Mar 25 21:58:25 2026 +0900
+
+    hello_world.txtを追加
+
+C:\Users\ftisl\Desktop\git_challenge>git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\ftisl\Desktop\git_challenge>git add .
+
+C:\Users\ftisl\Desktop\git_challenge>git commit -m "日本語訳を追記"
+[main 23035c6] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\ftisl\Desktop\git_challenge>git log
+commit 23035c6c9f94e745b82795292dda6b9643bf1a3c (HEAD -> main)
+Author: kocchi4498 <ftisland2729@gmail.com>
+Date:   Wed Mar 25 22:02:27 2026 +0900
+
+    日本語訳を追記
+
+commit 399e7498481edc37629331132c0d99d2d43f85ea
+Author: kocchi4498 <ftisland2729@gmail.com>
+Date:   Wed Mar 25 21:58:25 2026 +0900
+
+    hello_world.txtを追加
+
+C:\Users\ftisl\Desktop\git_challenge>git log --oneline
+23035c6 (HEAD -> main) 日本語訳を追記
+399e749 hello_world.txtを追加
+
+C:\Users\ftisl\Desktop\git_challenge>
